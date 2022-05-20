@@ -27,6 +27,7 @@ namespace HairSalon.Controllers
     {
       ViewBag.PageTitle = "Add Client";
       ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "Name");
+      ViewBag.StylistCheck = _db.Stylists.ToList().Count;
       return View();
     }
 

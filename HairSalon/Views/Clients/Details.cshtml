@@ -8,7 +8,5 @@
 <p>@Html.DisplayNameFor(model => model.InitialApp): @Html.DisplayFor(model => model.InitialApp)</p>
 <p>@Html.DisplayNameFor(model => model.NextApp): @Html.DisplayFor(model => model.NextApp)</p>
 
-@using (Html.BeginForm("Edit", "Clients", new { id = Model.ClientId}, FormMethod.Get))
-{
-  <input type="submit" value="Edit" class="btn-primary">
-}
+
+<p>@Html.ActionLink("Edit", "Edit", new { id = Model.ClientId}, new { @Class = "btn btn-primary" })</p>

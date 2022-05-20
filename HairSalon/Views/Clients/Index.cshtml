@@ -9,10 +9,10 @@
 }
 
 <ul>
-@foreach (Client client in Model)
+@foreach(Client client in Model)
 {
-  <li>client.Name</li>
+  <li>@client.Name</li>
 
 }
 </ul>
- <p>@Html.ActionLink("Go to Homepage", "Index", "Home")</p>
+ <p>@Html.ActionLink("Add Clients", "Create")</p>

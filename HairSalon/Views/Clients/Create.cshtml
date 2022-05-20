@@ -1,10 +1,12 @@
 @{
   Layout = "_Layout";
 }
-
+@using HairSalon.Models;
 @model HairSalon.Models.Client
 
 <h3>New Client</h3>
+
+@if(Model.Stylist)
 
 @using (Html.BeginForm())
 {

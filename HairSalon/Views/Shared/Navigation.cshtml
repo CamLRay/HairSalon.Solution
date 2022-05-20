@@ -1,5 +1,15 @@
-<div id="navigation">
-<p>@Html.ActionLink("Home", "Index", "Home")</p>
-<p>@Html.ActionLink("Stylists", "Index", "Stylists")</p>
-<p>@Html.ActionLink("Clients", "Index", "Clients")</p>
+<div class="navigation">
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Get))
+{
+  <input type="submit" value="Home" class="btn-primary">
+}
+@using (Html.BeginForm("Index", "Stylists", FormMethod.Get))
+{
+  <input type="submit" value="Stylists" class="btn-primary">
+}
+@using (Html.BeginForm("Index", "Clients", FormMethod.Get))
+{
+  <input type="submit" value="Clients" class="btn-primary">
+}
 </div>
